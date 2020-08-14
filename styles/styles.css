@@ -264,4 +264,10 @@ img {
   img {
     left: -52px;
   }
+  .hamburger {
+    position: absolute;
+    margin: 0;
+    top: 33px;
+    right: 30px;
+  }
 }
