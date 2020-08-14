@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  color: #000000;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 0 0;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.logo {
+  width: 66px;
+  height: 39px;
+  margin-left: 50px;
+  background-image: url("../images/logo.png");
+}
+
+.navLinks {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav button {
+  margin-right: 48px;
+}
+
+li {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+li:nth-child(3) {
+  margin-right: 55px;
+}
+
+li:nth-child(2) {
+  margin-right: 51px;
+}
+
+li:nth-child(1) {
+  margin-right: 53px;
+}
+
+.hamburger {
+  display: none;
+  height: 23px;
+  width: 40px;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  background: #000;
+}
+
+button {
+  padding: 9px 15px 11px 16px;
+  background: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  width: 175px;
+  height: 43px;
+  cursor: pointer;
+}
+
+button span {
+  display: inline-block;
+  width: 144px;
+  height: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.heroBackground {
+  background-image: url("../images/heroBG.png");
+  width: 60%;
+  height: 100%;
+  min-height: 694px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+main {
+  height: 100vh;
+  min-height: 694px;
+  width: 100vw;
+  max-width: 1440px;
+  padding: 0 139px 0 125px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  position: relative;
+  top: 194px;
+}
+
+.heroContent {
+  position: relative;
+  top: 187px;
+}
+
+.heroContent h1 {
+  position: relative;
+  width: 387px;
+  height: 118px;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 23px;
+  line-height: 59px;
+}
+
+.heroContent div {
+  width: 504px;
+  height: 187px;
+}
+
+.heroContent h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  width: 430px;
+  line-height: 34px;
+}
+
+.heroButton {
+  position: absolute;
+  bottom: 48px;
+}
+
+.ipadBreak {
+  display: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  nav {
+    padding: 50px 0 0 0;
+  }
+  main {
+    padding: 0 50px;
+  }
+  .heroContent {
+    width: 387px;
+  }
+  .heroContent h1 {
+    width: 308px;
+    height: 94px;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 29px;
+  }
+  .heroContent h2 {
+    width: 308px;
+  }
+  .heroButton {
+    bottom: 11px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .heroContent {
+    width: 454px;
+    height: 310px;
+    top: 145px;
+  }
+  .navLinks {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .heroBackground {
+    display: none;
+  }
+  img {
+    position: absolute;
+    top: 145px;
+    right: -100px;
+  }
+  .ipadBreak {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  nav {
+    padding: 30px 0 0 0;
+  }
+  main {
+    flex-wrap: wrap;
+    padding: 0 30px;
+    min-height: 812px;
+  }
+  .heroContent {
+    width: 504px;
+    height: 295px;
+    top: 120px;
+  }
+  .heroContent div {
+    width: 100%;
+    height: auto;
+  }
+
+  .heroContent h1 {
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 15px;
+  }
+  .heroContent h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  img {
+    position: relative;
+    width: 439px;
+    height: 319px;
+    top: 35px;
+    left: 0;
+  }
+  .logo {
+    margin-left: 30px;
+  }
+  .hamburger {
+    margin-right: 30px;
+  }
+  .heroButton {
+    bottom: 33px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    left: -52px;
+  }
+}
